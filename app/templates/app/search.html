@@ -1,0 +1,13 @@
+{% extends 'app/base.html' %}
+{% block main-content %}
+<div class="container">
+    {% for prod in product%}
+    <div class="row">
+        {{prod.id}}
+    {{prod.title}}
+    {{prod.discounted_price}}
+    </div>
+
+    {% endfor %}
+</div>
+{% endblock main-content %}
